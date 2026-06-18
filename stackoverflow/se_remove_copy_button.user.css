@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           Stack Exchange - hide copy button
+@namespace      https://github.com/PurpleMagick/
+@version        1.0.0
+@description    Removes the copy button in code blocks on the Stack Exchange network.
+@author         VLAZ
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+    pre.s-code-block div[data-nosnippet] {
+        display: none !important;
+    }
+}
